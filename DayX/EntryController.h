@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "Entry.h"
 
+static NSString *const EntryListUpdated = @"EntryListUpdated";
+
 @interface EntryController : NSObject
 
 @property (nonatomic, strong, readonly) NSArray *entries;
@@ -17,6 +19,7 @@
 
 - (void)addEntryWithTitle:(NSString *)title text:(NSString *)text date:(NSDate *)date;
 - (void)removeEntry:(Entry *)entry;
+- (void)updateEntry:(Entry *)entry;
 
 - (void)synchronize;
 

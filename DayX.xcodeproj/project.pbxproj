@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FF9919B1AF1C0FC00383A9B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF9919A1AF1C0FC00383A9B /* CloudKit.framework */; };
+		2FF991AA1AF1CE5300383A9B /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF991A91AF1CE5300383A9B /* Entry.m */; };
 		711A506A19388095005642EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711A506919388095005642EF /* Foundation.framework */; };
 		711A506C19388095005642EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711A506B19388095005642EF /* CoreGraphics.framework */; };
 		711A506E19388095005642EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711A506D19388095005642EF /* UIKit.framework */; };
@@ -21,7 +23,6 @@
 		711A508F19388096005642EF /* DayXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 711A508E19388096005642EF /* DayXTests.m */; };
 		715A720319DDD1C200895248 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 715A720119DDD1C200895248 /* Model.xcdatamodeld */; };
 		715A720719DDD27700895248 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 715A720619DDD27700895248 /* Stack.m */; };
-		715A720A19DDD2B000895248 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 715A720919DDD2B000895248 /* Entry.m */; };
 		7160740219CADDA500D730CF /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7160740119CADDA500D730CF /* EntryController.m */; };
 		7160740519CAE03C00D730CF /* DXListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7160740419CAE03C00D730CF /* DXListViewController.m */; };
 		7160740819CAE06500D730CF /* DXListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7160740719CAE06500D730CF /* DXListTableViewDataSource.m */; };
@@ -40,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FF991991AF1C0FB00383A9B /* DayX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DayX.entitlements; sourceTree = "<group>"; };
+		2FF9919A1AF1C0FC00383A9B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		2FF991A81AF1CE5300383A9B /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		2FF991A91AF1CE5300383A9B /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 		711A506619388095005642EF /* DayX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		711A506919388095005642EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		711A506B19388095005642EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,8 +64,6 @@
 		715A720219DDD1C200895248 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		715A720519DDD27700895248 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		715A720619DDD27700895248 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
-		715A720819DDD2B000895248 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
-		715A720919DDD2B000895248 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 		7160740019CADDA500D730CF /* EntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
 		7160740119CADDA500D730CF /* EntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
 		7160740319CAE03C00D730CF /* DXListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXListViewController.h; sourceTree = "<group>"; };
@@ -78,6 +81,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				711A506C19388095005642EF /* CoreGraphics.framework in Frameworks */,
+				2FF9919B1AF1C0FC00383A9B /* CloudKit.framework in Frameworks */,
 				711A506E19388095005642EF /* UIKit.framework in Frameworks */,
 				711A506A19388095005642EF /* Foundation.framework in Frameworks */,
 			);
@@ -118,6 +122,7 @@
 		711A506819388095005642EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FF9919A1AF1C0FC00383A9B /* CloudKit.framework */,
 				711A506919388095005642EF /* Foundation.framework */,
 				711A506B19388095005642EF /* CoreGraphics.framework */,
 				711A506D19388095005642EF /* UIKit.framework */,
@@ -129,6 +134,7 @@
 		711A506F19388095005642EF /* DayX */ = {
 			isa = PBXGroup;
 			children = (
+				2FF991991AF1C0FB00383A9B /* DayX.entitlements */,
 				711A507819388095005642EF /* DXAppDelegate.h */,
 				711A507919388095005642EF /* DXAppDelegate.m */,
 				715A720419DDD22300895248 /* Model */,
@@ -180,8 +186,8 @@
 				715A720519DDD27700895248 /* Stack.h */,
 				715A720619DDD27700895248 /* Stack.m */,
 				715A720119DDD1C200895248 /* Model.xcdatamodeld */,
-				715A720819DDD2B000895248 /* Entry.h */,
-				715A720919DDD2B000895248 /* Entry.m */,
+				2FF991A81AF1CE5300383A9B /* Entry.h */,
+				2FF991A91AF1CE5300383A9B /* Entry.m */,
 				7160740019CADDA500D730CF /* EntryController.h */,
 				7160740119CADDA500D730CF /* EntryController.m */,
 			);
@@ -236,6 +242,14 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = DevMountain;
 				TargetAttributes = {
+					711A506519388095005642EF = {
+						DevelopmentTeam = 357NQPN89X;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
 					711A508019388096005642EF = {
 						TestTargetID = 711A506519388095005642EF;
 					};
@@ -288,7 +302,7 @@
 				7160740819CAE06500D730CF /* DXListTableViewDataSource.m in Sources */,
 				711A507A19388095005642EF /* DXAppDelegate.m in Sources */,
 				715A720719DDD27700895248 /* Stack.m in Sources */,
-				715A720A19DDD2B000895248 /* Entry.m in Sources */,
+				2FF991AA1AF1CE5300383A9B /* Entry.m in Sources */,
 				715A720319DDD1C200895248 /* Model.xcdatamodeld in Sources */,
 				711A507619388095005642EF /* main.m in Sources */,
 				7160740219CADDA500D730CF /* EntryController.m in Sources */,
@@ -410,10 +424,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = DayX/DayX.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DayX/DayX-Prefix.pch";
 				INFOPLIST_FILE = "DayX/DayX-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -423,10 +441,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = DayX/DayX.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DayX/DayX-Prefix.pch";
 				INFOPLIST_FILE = "DayX/DayX-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
